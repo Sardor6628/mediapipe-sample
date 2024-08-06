@@ -3,7 +3,7 @@ import time
 import mediapipe as mp
 
 # Choose camera index (0 for default camera, 1 for the next camera, etc.)
-camera_index = 0
+camera_index = 1
 
 mp_holistic = mp.solutions.holistic
 holistic_model = mp_holistic.Holistic(
@@ -67,8 +67,8 @@ while capture.isOpened():
 
     # Drawing the landmarks and displaying values
     draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS)
-    draw_landmarks(image, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
-    draw_landmarks(image, results.left_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
+    # draw_landmarks(image, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
+    # draw_landmarks(image, results.left_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
 
     # Calculating the FPS
     currentTime = time.time()
@@ -85,7 +85,5 @@ while capture.isOpened():
     if cv2.waitKey(5) & 0xFF == ord('q'):
         break
 
-# When all the process is done
-# Release the capture and destroy all windows
 capture.release()
 cv2.destroyAllWindows()
