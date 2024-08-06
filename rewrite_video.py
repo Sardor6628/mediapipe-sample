@@ -24,7 +24,7 @@ def process_video(video_path):
     frame_height = int(capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = int(capture.get(cv2.CAP_PROP_FPS))
     video_name = os.path.splitext(os.path.basename(video_path))[0]
-    output_dir = f'./{video_name}_output'
+    output_dir = f'Bad_output/{video_name}_output'
     os.makedirs(output_dir, exist_ok=True)
     output_video_path = os.path.join(output_dir, f'{video_name}_processed.mp4')
 
@@ -95,5 +95,5 @@ def process_video(video_path):
     print(f'Landmark data saved at {json_output_path}')
 
 # Example usage
-video_path = 'SIH_dynamic_0_right2.MOV'
+video_path = 'Bad_ty2/SIH_dynamic_2_right.MOV'
 process_video(video_path)
