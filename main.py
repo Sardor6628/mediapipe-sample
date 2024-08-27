@@ -4,6 +4,7 @@ import mediapipe as mp
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+from matplotlib.widgets import Button, Slider  # Import Button and Slider widgets
 
 # Choose camera index (0 for default camera, 1 for the next camera, etc.)
 camera_index = 0
@@ -18,13 +19,9 @@ holistic_model = mp_holistic.Holistic(
 # Initialize video capture with the specified camera index
 capture = cv2.VideoCapture(camera_index)
 
-# Variables to calculate frames per second (FPS)
-previousTime = 0  # Previous time to calculate FPS
-currentTime = 0   # Current time to calculate FPS
-
 # Set up the matplotlib figure and 3D axis for real-time updating
 plt.ion()  # Turn on interactive mode for real-time updates
-fig = plt.figure()  # Create a new figure for plotting
+fig = plt.figure(figsize=(8, 6))  # Create a new figure for plotting
 ax = fig.add_subplot(111, projection='3d')  # Add a 3D subplot
 
 # Initialize scatter plot for landmarks
@@ -36,13 +33,27 @@ ax.set_xlabel('X Label')  # Label for X-axis
 ax.set_ylabel('Y Label')  # Label for Y-axis
 ax.set_zlabel('Z Label')  # Label for Z-axis
 
+# Set axis limits to maintain a consistent view
+ax.set_xlim(0, 1)   # Limit X axis
+ax.set_ylim(-1, 1)  # Inverted Y-axis: head at the top, legs at the bottom
+ax.set_zlim(0, 1)   # Limit Z axis (depth)
+
+# Remove grid lines
+ax.grid(False)
+
+# Default view settings for the 3D plot
+default_elevation = 270  # Elevation angle
+default_azimuth = 90     # Azimuth angle
+default_roll = 180       # Roll angle
+ax.view_init(elev=default_elevation, azim=default_azimuth, roll=default_roll)  # Apply default view
+
 # Function to update the 3D plot with new landmarks
 def update_3d_plot(landmarks):
     if landmarks:  # Check if landmarks are available
         # Extract X, Y, Z coordinates of each landmark
         x_vals = [landmark.x for landmark in landmarks.landmark]
-        y_vals = [landmark.y for landmark in landmarks.landmark]
-        z_vals = [landmark.z for landmark in landmarks.landmark]
+        y_vals = [-landmark.y for landmark in landmarks.landmark]  # Invert Y for natural orientation
+        z_vals = [landmark.z for landmark in landmarks.landmark]  # Use Z values as is
 
         # Update the scatter plot with new coordinates
         scatter._offsets3d = (x_vals, y_vals, z_vals)
@@ -59,7 +70,7 @@ def update_3d_plot(landmarks):
             end = landmarks.landmark[end_idx]      # End landmark
             line = ax.plot(
                 [start.x, end.x],  # X coordinates
-                [start.y, end.y],  # Y coordinates
+                [-start.y, -end.y],  # Invert Y coordinates for correct orientation
                 [start.z, end.z],  # Z coordinates
                 c='g'  # Color of the line
             )[0]
@@ -68,8 +79,46 @@ def update_3d_plot(landmarks):
         plt.draw()  # Update the plot with new data
         plt.pause(0.001)  # Pause briefly to allow for the plot to update
 
+# Function to update the view using sliders
+# def update_view(val):
+#     elev = slider_elev.val
+#     azim = slider_azim.val
+#     roll = slider_roll.val
+#     ax.view_init(elev=elev, azim=azim)
+#     ax.roll = roll
+#     plt.draw()
+
+# Function to exit the application
+def exit_app(event):
+    global running
+    running = False
+    plt.close(fig)
+
+# Add sliders to control the view angles
+axcolor = 'lightgoldenrodyellow'
+# ax_elev = plt.axes([0.15, 0.02, 0.65, 0.03], facecolor=axcolor)
+# ax_azim = plt.axes([0.15, 0.06, 0.65, 0.03], facecolor=axcolor)
+# ax_roll = plt.axes([0.15, 0.10, 0.65, 0.03], facecolor=axcolor)
+
+# slider_elev = Slider(ax_elev, 'Elev', 0, 360, valinit=default_elevation)
+# slider_azim = Slider(ax_azim, 'Azim', 0, 360, valinit=default_azimuth)
+# slider_roll = Slider(ax_roll, 'Roll', 0, 360, valinit=default_roll)
+#
+# # Connect the sliders to the update_view function
+# slider_elev.on_changed(update_view)
+# slider_azim.on_changed(update_view)
+# slider_roll.on_changed(update_view)
+
+# Add an Exit button to terminate the application
+button_ax = plt.axes([0.8, 0.9, 0.1, 0.075])
+exit_button = Button(button_ax, 'Exit', color='red', hovercolor='darkred')
+exit_button.on_clicked(exit_app)
+
+# Variable to control the main loop
+running = True
+
 # Main loop to capture video frames and process them
-while capture.isOpened():
+while running and capture.isOpened():
     # Capture frame by frame from the video feed
     ret, frame = capture.read()
     if not ret:  # If frame capturing fails, exit the loop
@@ -87,21 +136,14 @@ while capture.isOpened():
     results = holistic_model.process(image)  # Process the image and extract landmarks
     image.flags.writeable = True   # Re-enable write access to the image
 
-    # Convert the processed image back from RGB to BGR (for OpenCV display)
-    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-
     # If pose landmarks are detected, update the 3D plot with these landmarks
     if results.pose_landmarks:
         update_3d_plot(results.pose_landmarks)
 
-    # Calculate and display the frames per second (FPS) on the image
-    currentTime = time.time()  # Get current time
-    fps = 1 / (currentTime - previousTime)  # Calculate FPS
-    previousTime = currentTime  # Update previous time to current time
-    cv2.putText(image, str(int(fps)) + " FPS", (10, 70), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)  # Display FPS
-
-    # Display the resulting image with landmarks and FPS
-    cv2.imshow("Body and Hand Landmarks", image)
+    # Optionally, display the video feed (if needed for reference)
+    # Position the video window at (100, 100) on the screen
+    # cv2.imshow("Video Feed", frame)
+    # cv2.moveWindow("Video Feed", 100, 100)  # Move window to specified location
 
     # Exit the loop when the 'q' key is pressed
     if cv2.waitKey(5) & 0xFF == ord('q'):
