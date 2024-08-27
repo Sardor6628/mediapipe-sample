@@ -1,89 +1,112 @@
 import cv2
 import time
 import mediapipe as mp
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
 
 # Choose camera index (0 for default camera, 1 for the next camera, etc.)
-camera_index = 1
+camera_index = 0
 
+# Initialize MediaPipe's holistic model for pose, face, and hand tracking
 mp_holistic = mp.solutions.holistic
 holistic_model = mp_holistic.Holistic(
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5
+    min_detection_confidence=0.5,  # Minimum confidence value for detection to be considered successful
+    min_tracking_confidence=0.5    # Minimum confidence value for tracking to be considered successful
 )
 
-# Initializing the drawing utils for drawing the facial landmarks on image
-mp_drawing = mp.solutions.drawing_utils
-
-# Change the camera index here to switch cameras
+# Initialize video capture with the specified camera index
 capture = cv2.VideoCapture(camera_index)
 
-# Initializing current time and previous time for calculating the FPS
-previousTime = 0
-currentTime = 0
+# Variables to calculate frames per second (FPS)
+previousTime = 0  # Previous time to calculate FPS
+currentTime = 0   # Current time to calculate FPS
 
-def draw_landmarks(image, landmarks, connections):
-    if landmarks:
-        for idx, landmark in enumerate(landmarks.landmark):
-            if idx >10:
-                x = int(landmark.x * image.shape[1])
-                y = int(landmark.y * image.shape[0])
-                cv2.putText(image, f'{idx}: ({landmark.x:.2f}, {landmark.y:.2f})', (x, y),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 0, 0), 1, cv2.LINE_AA)
-                cv2.circle(image, (x, y), 2, (0, 255, 0), -1)
-        if connections:
-            for connection in connections:
-                start_idx = connection[0]
-                end_idx = connection[1]
-                if start_idx >= 10 and end_idx >= 10:
-                    start = landmarks.landmark[start_idx]
-                    end = landmarks.landmark[end_idx]
-                    start_point = (int(start.x * image.shape[1]), int(start.y * image.shape[0]))
-                    end_point = (int(end.x * image.shape[1]), int(end.y * image.shape[0]))
-                    cv2.line(image, start_point, end_point, (0, 255, 0), 2)
+# Set up the matplotlib figure and 3D axis for real-time updating
+plt.ion()  # Turn on interactive mode for real-time updates
+fig = plt.figure()  # Create a new figure for plotting
+ax = fig.add_subplot(111, projection='3d')  # Add a 3D subplot
 
+# Initialize scatter plot for landmarks
+scatter = ax.scatter([], [], [], c='b', marker='o')  # Create an empty scatter plot
+lines = []  # List to store line objects connecting landmarks
+
+# Set axis labels
+ax.set_xlabel('X Label')  # Label for X-axis
+ax.set_ylabel('Y Label')  # Label for Y-axis
+ax.set_zlabel('Z Label')  # Label for Z-axis
+
+# Function to update the 3D plot with new landmarks
+def update_3d_plot(landmarks):
+    if landmarks:  # Check if landmarks are available
+        # Extract X, Y, Z coordinates of each landmark
+        x_vals = [landmark.x for landmark in landmarks.landmark]
+        y_vals = [landmark.y for landmark in landmarks.landmark]
+        z_vals = [landmark.z for landmark in landmarks.landmark]
+
+        # Update the scatter plot with new coordinates
+        scatter._offsets3d = (x_vals, y_vals, z_vals)
+
+        # Remove old lines connecting landmarks
+        for line in lines:
+            line.remove()
+        lines.clear()  # Clear the list of lines
+
+        # Draw new lines connecting landmarks as per MediaPipe connections
+        for connection in mp_holistic.POSE_CONNECTIONS:
+            start_idx, end_idx = connection  # Indices of the start and end points of the line
+            start = landmarks.landmark[start_idx]  # Start landmark
+            end = landmarks.landmark[end_idx]      # End landmark
+            line = ax.plot(
+                [start.x, end.x],  # X coordinates
+                [start.y, end.y],  # Y coordinates
+                [start.z, end.z],  # Z coordinates
+                c='g'  # Color of the line
+            )[0]
+            lines.append(line)  # Add line to the list
+
+        plt.draw()  # Update the plot with new data
+        plt.pause(0.001)  # Pause briefly to allow for the plot to update
+
+# Main loop to capture video frames and process them
 while capture.isOpened():
-    # capture frame by frame
+    # Capture frame by frame from the video feed
     ret, frame = capture.read()
-
-    if not ret:
+    if not ret:  # If frame capturing fails, exit the loop
         print("Failed to grab frame")
         break
 
-    # resizing the frame for better view
+    # Resize the frame for better visualization
     frame = cv2.resize(frame, (800, 600))
 
-    # Converting the from BGR to RGB
+    # Convert the frame from BGR (OpenCV format) to RGB (MediaPipe format)
     image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-    # Making predictions using holistic model
-    # To improve performance, optionally mark the image as not writeable to
-    # pass by reference.
-    image.flags.writeable = False
-    results = holistic_model.process(image)
-    image.flags.writeable = True
+    # Make predictions using the holistic model (pose, face, hand landmarks)
+    image.flags.writeable = False  # Mark image as not writeable to improve performance
+    results = holistic_model.process(image)  # Process the image and extract landmarks
+    image.flags.writeable = True   # Re-enable write access to the image
 
-    # Converting back the RGB image to BGR
+    # Convert the processed image back from RGB to BGR (for OpenCV display)
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
-    # Drawing the landmarks and displaying values
-    draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS)
-    # draw_landmarks(image, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
-    # draw_landmarks(image, results.left_hand_landmarks, mp_holistic.HAND_CONNECTIONS)
+    # If pose landmarks are detected, update the 3D plot with these landmarks
+    if results.pose_landmarks:
+        update_3d_plot(results.pose_landmarks)
 
-    # Calculating the FPS
-    currentTime = time.time()
-    fps = 1 / (currentTime - previousTime)
-    previousTime = currentTime
+    # Calculate and display the frames per second (FPS) on the image
+    currentTime = time.time()  # Get current time
+    fps = 1 / (currentTime - previousTime)  # Calculate FPS
+    previousTime = currentTime  # Update previous time to current time
+    cv2.putText(image, str(int(fps)) + " FPS", (10, 70), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)  # Display FPS
 
-    # Displaying FPS on the image
-    cv2.putText(image, str(int(fps)) + " FPS", (10, 70), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
-
-    # Display the resulting image
+    # Display the resulting image with landmarks and FPS
     cv2.imshow("Body and Hand Landmarks", image)
 
-    # Enter key 'q' to break the loop
+    # Exit the loop when the 'q' key is pressed
     if cv2.waitKey(5) & 0xFF == ord('q'):
         break
 
+# Release the capture object and close all OpenCV windows
 capture.release()
 cv2.destroyAllWindows()
