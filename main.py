@@ -74,6 +74,9 @@ def update_3d_plot(landmarks):
                 [start.z, end.z],  # Z coordinates
                 c='g'  # Color of the line
             )[0]
+            print(line,[start.x, end.x],  # X coordinates
+                [-start.y, -end.y],  # Invert Y coordinates for correct orientation
+                [start.z, end.z])
             lines.append(line)  # Add line to the list
 
         plt.draw()  # Update the plot with new data
