@@ -69,7 +69,7 @@ def update_3d_plot(landmarks):
             start = landmarks.landmark[start_idx]  # Start landmark
             end = landmarks.landmark[end_idx]      # End landmark
             line = ax.plot(
-                [start.x, end.x],  # X coordinates
+                [start.x_, end.x],  # X coordinates
                 [-start.y, -end.y],  # Invert Y coordinates for correct orientation
                 [start.z, end.z],  # Z coordinates
                 c='g'  # Color of the line

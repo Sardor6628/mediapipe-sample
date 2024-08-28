@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/global_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/normalized_data/n_1_sih/N_SIH_dynamic_0_01.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_from_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualization_of_normilized_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <workItem from="1724642326892" duration="1564000" />
       <workItem from="1724647077100" duration="4694000" />
       <workItem from="1724721159300" duration="9283000" />
-      <workItem from="1724806353857" duration="15660000" />
+      <workItem from="1724806353857" duration="24430000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -126,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724731046400</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-data manipulation">
+      <created>1724833016422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724833016422</updated>
+    </task>
+    <task id="LOCAL-00007" summary="-dataset">
+      <created>1724833059824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724833059824</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +151,9 @@
     <MESSAGE value="-generating bad and good videos" />
     <MESSAGE value="-real time pose detection and displaying a pose with matplotlib" />
     <MESSAGE value="-view hav been changed." />
-    <option name="LAST_COMMIT_MESSAGE" value="-view hav been changed." />
+    <MESSAGE value="-data manipulation" />
+    <MESSAGE value="-dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="-dataset" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

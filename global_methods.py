@@ -28,6 +28,8 @@ def get_list_of_lines(_dict):
         get_line(_dict['rt_hip'], _dict['rt_knee']),
         get_line(_dict['rt_knee'], _dict['rt_ank']),
         get_line(_dict['lt_hip'], _dict['lt_knee']),
-        get_line(_dict['lt_knee'], _dict['lt_ank'])
+        get_line(_dict['lt_knee'], _dict['lt_ank']),
+        get_line(_dict['rt_plv'], _dict['rt_hip']),
+        get_line(_dict['lt_plv'], _dict['lt_hip'])
     ]
     return _list
