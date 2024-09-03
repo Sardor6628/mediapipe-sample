@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Button, Slider  # Import Button and Slider widgets
 
 # Choose camera index (0 for default camera, 1 for the next camera, etc.)
-camera_index = 0
+camera_index = 1
 
 # Initialize MediaPipe's holistic model for pose, face, and hand tracking
 mp_holistic = mp.solutions.holistic
