@@ -2,61 +2,54 @@ import pyrealsense2 as rs
 import numpy as np
 import cv2
 import mediapipe as mp
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import json
 import os
 
-# Initialize MediaPipe Pose
-mp_pose = mp.solutions.pose
-pose = mp_pose.Pose()
+# Helper function to calculate angle between three points
+def find_angle(a, b, c, min_visibility=0.8):
+    if a.visibility > min_visibility and b.visibility > min_visibility and c.visibility > min_visibility:
+        ba = np.array([a.x - b.x, a.y - b.y, a.z - b.z])
+        bc = np.array([c.x - b.x, c.y - b.y, c.z - b.z])
+        angle = np.arccos(np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))) * (180.0 / np.pi)
+        return angle if angle <= 180 else 360 - angle
+    else:
+        return -1
 
-# Configure RealSense pipeline
-pipeline = rs.pipeline()
-config = rs.config()
-config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
-config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+def leg_state(angle):
+    if angle < 0:
+        return 0  # Not detected
+    elif angle < 105:
+        return 1  # Squatting
+    elif angle < 130:
+        return 2  # Transitioning
+    else:
+        return 3  # Standing
 
-# Start streaming
-pipeline.start(config)
+def initialize_pose():
+    mp_pose = mp.solutions.pose
+    pose = mp_pose.Pose()
+    return pose
 
-# Set up matplotlib for 3D visualization
-plt.ion()  # Turn on interactive mode
-fig = plt.figure(figsize=(10, 8))
-ax = fig.add_subplot(111, projection='3d')
+def initialize_realsense():
+    pipeline = rs.pipeline()
+    config = rs.config()
+    config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
+    config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+    return pipeline, config
 
-# Set axis labels
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
+def start_streaming(pipeline, config):
+    pipeline.start(config)
 
-# Set axis limits
-ax.set_xlim(-0.5, 0.5)
-ax.set_ylim(-0.5, 0.5)
-ax.set_zlim(-1, 1)
+def initialize_output(output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    video_output_path = os.path.join(output_dir, "output_video.mp4")
+    json_output_path = os.path.join(output_dir, "landmarks_output.json")
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    out = cv2.VideoWriter(video_output_path, fourcc, 30, (640, 480))
+    return out, video_output_path, json_output_path
 
-# Initialize scatter plot for landmarks and list for lines
-scatter = ax.scatter([], [], [], c='b', marker='o')
-lines = []  # To store line objects
-
-# Directory and filenames for outputs
-output_dir = "output"
-os.makedirs(output_dir, exist_ok=True)
-video_output_path = os.path.join(output_dir, "output_video.mp4")
-json_output_path = os.path.join(output_dir, "landmarks_output.json")
-
-# Video writer setup
-fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter(video_output_path, fourcc, 30, (640, 480))
-
-# List to store 3D landmarks for JSON output
-landmark_data_json = []
-
-
-# Function to record landmarks and save in JSON format
-def record_landmarks(frame_count, results):
+def record_landmarks(frame_count, results, landmark_data_json):
     landmarks_frame_data = []
-
     if results.pose_landmarks:
         for idx, landmark in enumerate(results.pose_landmarks.landmark):
             landmarks_frame_data.append({
@@ -66,103 +59,109 @@ def record_landmarks(frame_count, results):
                 "z": landmark.z,
                 "visibility": landmark.visibility
             })
-
-    # Append the frame's landmarks to the JSON data
     landmark_data_json.append({"frame": frame_count, "landmarks": landmarks_frame_data})
 
-
-# Main loop for streaming and visualization
-try:
-    frame_count = 0
-    while True:
-        # Wait for a coherent pair of frames: depth and color
-        frames = pipeline.wait_for_frames()
+def process_frame(pipeline, pose, max_retries=5):
+    retries = 0
+    while retries < max_retries:
+        frames = pipeline.wait_for_frames(timeout_ms=5000)
         depth_frame = frames.get_depth_frame()
         color_frame = frames.get_color_frame()
         if not depth_frame or not color_frame:
+            retries += 1
             continue
-
-        # Convert images to numpy arrays
         depth_image = np.asanyarray(depth_frame.get_data())
         color_image = np.asanyarray(color_frame.get_data())
-
-        # Process the RGB frame with MediaPipe Pose
         results = pose.process(cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB))
+        return depth_image, color_image, results
+    return None, None, None
 
-        # Draw the pose annotation on the color image
-        annotated_image = color_image.copy()
-        if results.pose_landmarks:
-            mp.solutions.drawing_utils.draw_landmarks(
-                annotated_image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+def display_status(annotated_image, status_text, color):
+    cv2.putText(annotated_image, status_text, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2, cv2.LINE_AA)
 
-            # Extract landmark coordinates with depth
-            x_vals = []
-            y_vals = []
-            z_vals = []
+def draw_landmark_connections(annotated_image, results):
+    if results.pose_landmarks:
+        mp.solutions.drawing_utils.draw_landmarks(
+            annotated_image, results.pose_landmarks, mp.solutions.pose.POSE_CONNECTIONS)
 
-            for idx, landmark in enumerate(results.pose_landmarks.landmark):
-                # Get the 2D coordinates in the image
-                x = int(landmark.x * color_image.shape[1])
-                y = int(landmark.y * color_image.shape[0])
+def save_output(video_writer, frame, annotated_image):
+    video_writer.write(annotated_image)
+    cv2.imshow('RealSense + MediaPipe Pose', annotated_image)
 
-                # Ensure coordinates are within the frame
-                if x >= 0 and x < depth_image.shape[1] and y >= 0 and y < depth_image.shape[0]:
-                    depth_value = depth_image[y, x]
+def draw_squat_count(annotated_image, squat_count):
+    cv2.putText(annotated_image, f"Squat: {squat_count}", (annotated_image.shape[1] - 200, annotated_image.shape[0] - 50),
+                cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-                    # Normalize coordinates for 3D visualization
-                    x_vals.append(landmark.x - 0.5)  # Centered at 0
-                    y_vals.append(0.5 - landmark.y)  # Inverted Y-axis
-                    z_vals.append(depth_value / 1000.0)  # Convert mm to meters
+def check_body_visibility(results, min_visible_landmarks=30, visibility_threshold=0.3):
+    if results.pose_landmarks:
+        visible_landmarks = [l for l in results.pose_landmarks.landmark if l.visibility >= visibility_threshold]
+        if len(visible_landmarks) >= min_visible_landmarks:
+            return True  # Full body is tracked
+        return False  # Partial tracking
+    return None  # No body tracked
 
-            # Clear previous lines
-            for line in lines:
-                line.remove()
-            lines.clear()
+def main():
+    # Initialize components
+    pose = initialize_pose()
+    pipeline, config = initialize_realsense()
+    start_streaming(pipeline, config)
+    output_dir = "output"
+    out, video_output_path, json_output_path = initialize_output(output_dir)
+    landmark_data_json = []
+    squat_count = 0
+    last_state = 3  # Assume standing initially
 
-            # Plot lines connecting landmarks
-            for connection in mp_pose.POSE_CONNECTIONS:
-                start_idx, end_idx = connection
-                if start_idx < len(x_vals) and end_idx < len(x_vals):
-                    line = ax.plot(
-                        [x_vals[start_idx], x_vals[end_idx]],
-                        [y_vals[start_idx], y_vals[end_idx]],
-                        [z_vals[start_idx], z_vals[end_idx]],
-                        c='g'
-                    )[0]
-                    lines.append(line)
+    try:
+        frame_count = 0
+        while True:
+            depth_image, color_image, results = process_frame(pipeline, pose)
+            if depth_image is None or color_image is None:
+                continue
+            annotated_image = color_image.copy()
+            draw_landmark_connections(annotated_image, results)
+            body_visibility = check_body_visibility(results)
 
-            # Update 3D scatter plot
-            scatter._offsets3d = (x_vals, y_vals, z_vals)
+            if body_visibility is None:
+                display_status(annotated_image, "No body tracked", (0, 0, 255))
+            elif body_visibility:
+                display_status(annotated_image, "Full body tracked", (0, 255, 0))
+            else:
+                display_status(annotated_image, "Full body couldn't be tracked", (0, 0, 255))
 
-            # Record the landmarks for the current frame
-            record_landmarks(frame_count, results)
+            if results.pose_landmarks:
+                r_knee_angle = find_angle(results.pose_landmarks.landmark[24], results.pose_landmarks.landmark[26], results.pose_landmarks.landmark[28])
+                l_knee_angle = find_angle(results.pose_landmarks.landmark[23], results.pose_landmarks.landmark[25], results.pose_landmarks.landmark[27])
+                print(f"Right Knee Angle: {r_knee_angle:.2f}, Left Knee Angle: {l_knee_angle:.2f}")
+                r_state = leg_state(r_knee_angle)
+                l_state = leg_state(l_knee_angle)
+                print(f"Right Leg State: {r_state}, Left Leg State: {l_state}")
 
-            # Draw and update the plot
-            plt.draw()
-            plt.pause(0.001)
+                if r_state == 1 and l_state == 1 and last_state == 3:
+                    print("Transitioning to Squat")
+                    last_state = 1
+                elif r_state == 3 and l_state == 3 and last_state == 1:
+                    squat_count += 1
+                    print(f"Squat Count: {squat_count}")
+                    last_state = 3
 
-        # Write the frame to the video output
-        out.write(annotated_image)
+            draw_squat_count(annotated_image, squat_count)
+            save_output(out, frame_count, annotated_image)
+            record_landmarks(frame_count, results, landmark_data_json)
 
-        # Display the annotated image in real-time
-        cv2.imshow('RealSense + MediaPipe Pose', annotated_image)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
 
-        frame_count += 1
+            frame_count += 1
 
-        # Break loop with 'q' key
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+    finally:
+        pipeline.stop()
+        out.release()
+        cv2.destroyAllWindows()
+        with open(json_output_path, 'w') as json_file:
+            json.dump(landmark_data_json, json_file, indent=4)
 
-finally:
-    # Stop streaming and release resources
-    pipeline.stop()
-    out.release()
-    cv2.destroyAllWindows()
-    plt.close(fig)
+        print(f"Video saved to {video_output_path}")
+        print(f"Landmarks saved to {json_output_path}")
 
-    # Save the landmark data to a JSON file
-    with open(json_output_path, 'w') as json_file:
-        json.dump(landmark_data_json, json_file, indent=4)
-
-    print(f"Video saved to {video_output_path}")
-    print(f"Landmarks saved to {json_output_path}")
+if __name__ == "__main__":
+    main()

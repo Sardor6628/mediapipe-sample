@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="-recording a video and displaying in 3d view">
-      <change afterPath="$PROJECT_DIR$/camera-calibration.py" afterDir="false" />
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- camera calibration">
+      <change afterPath="$PROJECT_DIR$/[MediaPipe_Python_Tasks]_Pose_Landmarker.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face_reflection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_tkinker_sample.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/camera-calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +74,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
+      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\calibration_images" />
       <recent name="$PROJECT_DIR$/normalized_data/n_1_sih" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -131,7 +137,8 @@
       <workItem from="1725265997658" duration="637000" />
       <workItem from="1725267007947" duration="8380000" />
       <workItem from="1725842817612" duration="17431000" />
-      <workItem from="1725929524997" duration="1776000" />
+      <workItem from="1725929524997" duration="11492000" />
+      <workItem from="1726018109450" duration="10377000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -214,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725872193659</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- camera calibration">
+      <option name="closed" value="true" />
+      <created>1725932363403</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725932363403</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,17 +258,8 @@
     <MESSAGE value="-3d view with fixed angles" />
     <MESSAGE value="-camera view related modifications" />
     <MESSAGE value="-recording a video and displaying in 3d view" />
-    <option name="LAST_COMMIT_MESSAGE" value="-recording a video and displaying in 3d view" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/in_depth_camera_view_and_record.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="- camera calibration" />
+    <option name="LAST_COMMIT_MESSAGE" value="- camera calibration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
