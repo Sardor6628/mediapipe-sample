@@ -48,7 +48,7 @@ def start_streaming(pipeline, config):
 
 
 def create_output_dir():
-    timestamp = datetime.now().strftime("%M_%S")
+    timestamp = datetime.now().strftime("%H-%M")
     output_dir = f"output/output_{timestamp}"
     os.makedirs(output_dir, exist_ok=True)
     return output_dir
