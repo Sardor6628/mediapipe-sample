@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- camera calibration">
-      <change afterPath="$PROJECT_DIR$/[MediaPipe_Python_Tasks]_Pose_Landmarker.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_reflection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_tkinker_sample.py" afterDir="false" />
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- squat count modification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera-calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/camera-calibration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +134,7 @@
       <workItem from="1725842817612" duration="17431000" />
       <workItem from="1725929524997" duration="11492000" />
       <workItem from="1726018109450" duration="10377000" />
+      <workItem from="1726099078090" duration="2961000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -229,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725932363403</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- squat count modification">
+      <option name="closed" value="true" />
+      <created>1726034647227</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726034647227</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- squat count modification">
+      <option name="closed" value="true" />
+      <created>1726046695177</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726046695177</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +271,8 @@
     <MESSAGE value="-camera view related modifications" />
     <MESSAGE value="-recording a video and displaying in 3d view" />
     <MESSAGE value="- camera calibration" />
-    <option name="LAST_COMMIT_MESSAGE" value="- camera calibration" />
+    <MESSAGE value="- squat count modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="- squat count modification" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
