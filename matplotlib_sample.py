@@ -81,7 +81,12 @@ def animate(frame_index):
     update_graph(frame_index, landmark_data)
 
 # Load landmark data from JSON file
-json_file_path = 'output/output_59_52/squat_2_landmarks.json'  # Change this to the correct path for your JSON file
+# json_file_path = 'output/output_14-19-good-0/all_squats_landmarks.json'
+# json_file_path = 'output/output_14-21-good-1-0/all_squats_landmarks.json'
+# json_file_path = 'output/output_14-27-bad-2-0/all_squats_landmarks.json'
+json_file_path = 'output/output_14-31-bad-3-0/all_squats_landmarks.json'
+# json_file_path = 'output/output_14-37-bad-4-0/all_squats_landmarks.json'
+# json_file_path = 'output/output_14-41-bad-5-0/all_squats_landmarks.json'
 landmark_data = load_landmark_data(json_file_path)
 
 # Create the animation

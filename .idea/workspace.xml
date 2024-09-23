@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- squat count modification">
+      <change afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record_full.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine_learning_algorithms/supervised_learning_algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matplotlib_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/matplotlib_sample.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.camera_related_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.in_depth_camera_mediapipe.executor&quot;: &quot;Run&quot;,
-    &quot;Python.in_depth_camera_view_and_record.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.visualization_of_normilized_data.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.camera_related_functions.executor": "Run",
+    "Python.in_depth_camera_mediapipe.executor": "Run",
+    "Python.in_depth_camera_view_and_record.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.visualization_of_normilized_data.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Administrator/PycharmProjects/mediapipe-sample",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\calibration_images" />
@@ -134,7 +141,7 @@
       <workItem from="1725842817612" duration="17431000" />
       <workItem from="1725929524997" duration="11492000" />
       <workItem from="1726018109450" duration="10377000" />
-      <workItem from="1726099078090" duration="2961000" />
+      <workItem from="1726099078090" duration="29412000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -241,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726046695177</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- squat count modification">
+      <option name="closed" value="true" />
+      <created>1726118065803</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1726118065803</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
