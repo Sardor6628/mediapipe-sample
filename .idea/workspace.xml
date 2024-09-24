@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- squat count modification">
-      <change afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record_full.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/machine_learning_algorithms/supervised_learning_algorithms.py" afterDir="false" />
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="- Luke's squat data analyze">
+      <change afterPath="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matplotlib_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/matplotlib_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in_depth_camera_mediapipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_depth_camera_mediapipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/in_depth_camera_view_and_record_full.py" beforeDir="false" afterPath="$PROJECT_DIR$/in_depth_camera_view_and_record_full.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-18-good-0/all_squats_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-18-good-0/all_squats_landmarks.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -52,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.calculate_angles_and_generate_csv.executor": "Run",
     "Python.camera_related_functions.executor": "Run",
     "Python.in_depth_camera_mediapipe.executor": "Run",
     "Python.in_depth_camera_view_and_record.executor": "Run",
@@ -76,13 +91,37 @@
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\output\squat_luke" />
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\calibration_images" />
       <recent name="$PROJECT_DIR$/normalized_data/n_1_sih" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.calculate_angles_and_generate_csv">
+    <configuration name="calculate_angles_and_generate_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProjects" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProjects" />
       <option name="ENV_FILES" value="" />
@@ -106,6 +145,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.calculate_angles_and_generate_csv" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -141,7 +185,7 @@
       <workItem from="1725842817612" duration="17431000" />
       <workItem from="1725929524997" duration="11492000" />
       <workItem from="1726018109450" duration="10377000" />
-      <workItem from="1726099078090" duration="29412000" />
+      <workItem from="1726099078090" duration="40227000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -256,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726118065803</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- Luke's squat data analyze">
+      <option name="closed" value="true" />
+      <created>1727078910880</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727078910880</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,15 +339,17 @@
     <MESSAGE value="-recording a video and displaying in 3d view" />
     <MESSAGE value="- camera calibration" />
     <MESSAGE value="- squat count modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="- squat count modification" />
+    <MESSAGE value="- Luke's squat data analyze" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Luke's squat data analyze" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mediapipe_sample$camera_related_functions.coverage" NAME="camera_related_functions Coverage Results" MODIFIED="1725326528593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_view_and_record.coverage" NAME="in_depth_camera_view_and_record Coverage Results" MODIFIED="1725346348308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$calculate_angles_and_generate_csv.coverage" NAME="calculate_angles_and_generate_csv Coverage Results" MODIFIED="1727080722330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mediapipe_sample$visualization_of_normilized_data.coverage" NAME="visualization_of_normilized_data Coverage Results" MODIFIED="1725341227129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1725340511431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1727080577652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_mediapipe.coverage" NAME="in_depth_camera_mediapipe Coverage Results" MODIFIED="1725341331892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
