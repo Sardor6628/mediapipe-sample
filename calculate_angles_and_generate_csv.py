@@ -11,7 +11,7 @@ def load_landmark_data(json_file):
 
 
 # Helper function to calculate angle between three points (for general joint angles)
-def find_angle(a, b, c, min_visibility=0.8):
+def find_angle(a, b, c, min_visibility=0.6):
     try:
         if a['visibility'] > min_visibility and b['visibility'] > min_visibility and c['visibility'] > min_visibility:
             ba = np.array([a['x'] - b['x'], a['y'] - b['y'], a['z'] - b['z']])
@@ -25,7 +25,7 @@ def find_angle(a, b, c, min_visibility=0.8):
 
 
 # Function to calculate angles relative to the x, y, z axes
-def calculate_joint_angle_relative_to_axes(b, c, min_visibility=0.8):
+def calculate_joint_angle_relative_to_axes(b, c, min_visibility=0.6):
     if b['visibility'] > min_visibility and c['visibility'] > min_visibility:
         # Vector from joint b to joint c
         vector_bc = np.array([c['x'] - b['x'], c['y'] - b['y'], c['z'] - b['z']])
@@ -157,7 +157,7 @@ def generate_and_save_report_into_csv(base_path, path,seq):
         print("error occurred while working on ", base_path, "Error=>", e)
 
 
-base_path ="output/squat_luke/separated_by_squat/output_14-44-bad-5-1"
+base_path ="output/squat_luke/separated_by_squat/good-1-1"
 
-for index in range(1,10):
+for index in range(1,20):
     generate_and_save_report_into_csv(base_path,base_path+"/squat_"+str(index)+"_landmarks.json",index)

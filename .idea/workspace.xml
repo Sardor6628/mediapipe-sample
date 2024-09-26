@@ -4,142 +4,194 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="generated a new csv reports">
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="modified csv reports based on new formula">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matplotlib_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/matplotlib_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-18-good-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-18-good-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-19-good-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-19-good-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_10_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_10_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_6_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_7_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_7_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_7_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_8_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_8_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_8_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_8_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_9_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_9_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-20-good-0-1/squat_9_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_9_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_10_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_10_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_10_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_10_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_11_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_11_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_11_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_11_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_12_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_12_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_12_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_12_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_13_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_13_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_13_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_13_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_14_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_14_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_14_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_14_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_15_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_15_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_15_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_15_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_16_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_16_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_16_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_16_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_17_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_17_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_17_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_17_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_18_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_18_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_18_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_18_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_19_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_19_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_19_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_19_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_20_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_20_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_6_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_7_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_7_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_7_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_8_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_8_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_8_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_8_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_9_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_9_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-23-good-1-1/squat_9_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_9_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-27-bad-2-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-27-bad-2-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-29-bad-2-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-31-bad-3-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-31-bad-3-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_10_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_10_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_6_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_7_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_7_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_7_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_8_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_8_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_8_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_8_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_9_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_9_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-32-bad-3-1/squat_9_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_9_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-37-bad-4-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-37-bad-4-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_10_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_10_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_6_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_7_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_7_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_7_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_8_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_8_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_8_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_8_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_9_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_9_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-38-bad-4-1/squat_9_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_9_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-41-bad-5-0/output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/output_14-41-bad-5-0/output_landmarks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_10_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_10_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_1_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_1_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_2_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_2_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_3_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_3_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_4_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_4_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_5_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_5_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_6_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_6_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_7_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_7_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_7_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_8_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_8_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_8_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_8_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_9_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_9_landmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/squat_luke/output_14-44-bad-5-1/squat_9_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_9_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_10_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_6_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_6_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_7_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_7_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_7_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_8_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_8_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_8_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_9_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_9_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-20-good-0-1/squat_9_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_10_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_10_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_10_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_11_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_11_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_11_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_12_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_12_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_12_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_13_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_13_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_13_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_14_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_14_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_14_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_15_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_15_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_15_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_16_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_16_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_16_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_17_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_17_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_17_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_18_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_18_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_18_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_19_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_19_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_19_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_20_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_6_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_6_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_7_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_7_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_7_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_8_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_8_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_8_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_9_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_9_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-23-good-1-1/squat_9_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-29-bad-2-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_10_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_6_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_6_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_7_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_7_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_7_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_8_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_8_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_8_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_9_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_9_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-32-bad-3-1/squat_9_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_10_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_6_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_6_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_7_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_7_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_7_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_8_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_8_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_8_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_9_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_9_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-38-bad-4-1/squat_9_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_10_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_1_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_1_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_1_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_2_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_2_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_2_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_3_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_3_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_3_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_4_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_4_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_4_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_5_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_5_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_5_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_6_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_6_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_6_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_7_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_7_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_7_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_8_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_8_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_8_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_9_landmarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_9_output_landmarks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/squat_luke/separated_by_squat/output_14-44-bad-5-1/squat_9_video.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +365,7 @@
       <workItem from="1725842817612" duration="17431000" />
       <workItem from="1725929524997" duration="11492000" />
       <workItem from="1726018109450" duration="10377000" />
-      <workItem from="1726099078090" duration="48554000" />
+      <workItem from="1726099078090" duration="50329000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -452,7 +504,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727160529092</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="csv report based on new formula">
+      <option name="closed" value="true" />
+      <created>1727320604009</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727320604009</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modified csv reports based on new formula">
+      <option name="closed" value="true" />
+      <created>1727320674082</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1727320674082</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +553,9 @@
     <MESSAGE value="- squat count modification" />
     <MESSAGE value="- Luke's squat data analyze" />
     <MESSAGE value="generated a new csv reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="generated a new csv reports" />
+    <MESSAGE value="csv report based on new formula" />
+    <MESSAGE value="modified csv reports based on new formula" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified csv reports based on new formula" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
