@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="modified csv reports based on new formula">
-      <change afterPath="$PROJECT_DIR$/display_angles_realtime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display_joint_angles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/github_vicon_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="still working on it">
+      <change afterPath="$PROJECT_DIR$/json_to_dat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kpts_3d.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediapipe_lcs_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_joint_angles.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_joint_angles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/joint_angles_vicon_like_with_pelvis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/joint_angles_vicon_like_with_pelvis.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_csv/SIH_dynamic_0_front1_landmarks_joint_angles.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output_csv/SIH_dynamic_0_front1_landmarks_joint_angles.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +216,7 @@
       <workItem from="1726018109450" duration="10377000" />
       <workItem from="1726099078090" duration="50329000" />
       <workItem from="1727665268417" duration="6946000" />
-      <workItem from="1727674516553" duration="13692000" />
+      <workItem from="1727674516553" duration="43055000" />
     </task>
     <task id="LOCAL-00001" summary="-pose estimation">
       <created>1722851239980</created>
@@ -375,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727676942333</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="still working on it">
+      <option name="closed" value="true" />
+      <created>1727837236209</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1727837236210</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +422,8 @@
     <MESSAGE value="generated a new csv reports" />
     <MESSAGE value="csv report based on new formula" />
     <MESSAGE value="modified csv reports based on new formula" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified csv reports based on new formula" />
+    <MESSAGE value="still working on it" />
+    <option name="LAST_COMMIT_MESSAGE" value="still working on it" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
