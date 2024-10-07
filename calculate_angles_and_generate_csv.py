@@ -11,7 +11,7 @@ def load_landmark_data(json_file):
 
 
 # Helper function to calculate angle between three points (for general joint angles)
-def find_angle(a, b, c, min_visibility=0.3):
+def find_angle(a, b, c, min_visibility=0.6):
     try:
         if a['visibility'] > min_visibility and b['visibility'] > min_visibility and c['visibility'] > min_visibility:
             ba = np.array([a['x'] - b['x'], a['y'] - b['y'], a['z'] - b['z']])
@@ -25,7 +25,7 @@ def find_angle(a, b, c, min_visibility=0.3):
 
 
 # Function to calculate angles relative to the x, y, z axes
-def calculate_joint_angle_relative_to_axes(b, c, min_visibility=0.3):
+def calculate_joint_angle_relative_to_axes(b, c, min_visibility=0.6):
     if b['visibility'] > min_visibility and c['visibility'] > min_visibility:
         # Vector from joint b to joint c
         vector_bc = np.array([c['x'] - b['x'], c['y'] - b['y'], c['z'] - b['z']])
@@ -60,11 +60,10 @@ def flatten_landmarks(landmarks):
     flattened = {}
     for lm in landmarks:
         lm_id = lm['id']
-        if int(lm_id)>22:
-            flattened[f'{lm_id}_x'] = lm['x']
-            flattened[f'{lm_id}_y'] = lm['y']
-            flattened[f'{lm_id}_z'] = lm['z']
-            flattened[f'{lm_id}_v'] = lm['visibility']
+        flattened[f'{lm_id}_x'] = lm['x']
+        flattened[f'{lm_id}_y'] = lm['y']
+        flattened[f'{lm_id}_z'] = lm['z']
+        flattened[f'{lm_id}_v'] = lm['visibility']
     return flattened
 
 
@@ -158,7 +157,7 @@ def generate_and_save_report_into_csv(base_path, path,seq):
         print("error occurred while working on ", base_path, "Error=>", e)
 
 
-base_path ="output/Squat_Data/Squat_Data/Valid/output"
+base_path ="output/sam"
 
-for index in range(1,120):
-    generate_and_save_report_into_csv(base_path,base_path+"/"+str(index)+".json",index)
+for index in range(1,20):
+    generate_and_save_report_into_csv(base_path,base_path+"/squat_"+str(index)+"_landmarks.json",index)
