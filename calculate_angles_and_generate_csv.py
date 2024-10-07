@@ -157,7 +157,7 @@ def generate_and_save_report_into_csv(base_path, path,seq):
         print("error occurred while working on ", base_path, "Error=>", e)
 
 
-base_path ="output/sam"
+base_path ="output/sam-2"
 
 for index in range(1,20):
     generate_and_save_report_into_csv(base_path,base_path+"/squat_"+str(index)+"_landmarks.json",index)
