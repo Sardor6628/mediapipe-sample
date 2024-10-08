@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="-performing TEST squat - 3" />
+    <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine_learning_algorithms/test_ai_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/test_ai_model.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -329,23 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728292105248</updated>
     </task>
-    <task id="LOCAL-00020" summary="-performing TEST squat - 3">
-      <option name="closed" value="true" />
-      <created>1728292519200</created>
+    <task id="LOCAL-00020" summary="-test AI model">
+      <created>1728292744820</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1728292519200</updated>
+      <updated>1728292744820</updated>
     </task>
-    <task id="LOCAL-00021" summary="-performing TEST squat - 3">
-      <option name="closed" value="true" />
-      <created>1728292551995</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1728292551995</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,19 +373,19 @@
     <MESSAGE value="- Luke's squat data analyze" />
     <MESSAGE value="generated a new csv reports" />
     <MESSAGE value="-performing TEST squat - 2" />
-    <MESSAGE value="-performing TEST squat - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="-performing TEST squat - 3" />
+    <MESSAGE value="-test AI model" />
+    <option name="LAST_COMMIT_MESSAGE" value="-test AI model" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$camera_related_functions.coverage" NAME="camera_related_functions Coverage Results" MODIFIED="1725326528593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$display_angles_realtime.coverage" NAME="display_angles_realtime Coverage Results" MODIFIED="1727664859470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_view_and_record.coverage" NAME="in_depth_camera_view_and_record Coverage Results" MODIFIED="1725346348308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$display_joint_angles.coverage" NAME="display_joint_angles Coverage Results" MODIFIED="1727674625758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$calculate_angles_and_generate_csv.coverage" NAME="calculate_angles_and_generate_csv Coverage Results" MODIFIED="1727664826248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$visualization_of_normilized_data.coverage" NAME="visualization_of_normilized_data Coverage Results" MODIFIED="1725341227129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1727080577652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_mediapipe.coverage" NAME="in_depth_camera_mediapipe Coverage Results" MODIFIED="1725341331892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1727080577652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$visualization_of_normilized_data.coverage" NAME="visualization_of_normilized_data Coverage Results" MODIFIED="1725341227129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$display_angles_realtime.coverage" NAME="display_angles_realtime Coverage Results" MODIFIED="1727664859470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$camera_related_functions.coverage" NAME="camera_related_functions Coverage Results" MODIFIED="1725326528593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$calculate_angles_and_generate_csv.coverage" NAME="calculate_angles_and_generate_csv Coverage Results" MODIFIED="1727080722330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$display_joint_angles.coverage" NAME="display_joint_angles Coverage Results" MODIFIED="1727674625758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_view_and_record.coverage" NAME="in_depth_camera_view_and_record Coverage Results" MODIFIED="1725346348308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

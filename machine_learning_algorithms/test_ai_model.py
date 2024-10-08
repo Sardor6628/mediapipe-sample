@@ -114,13 +114,12 @@ def aggregate_squat_data(file_path):
 
 
 # Load the saved model
-for index in range(1,11):
+for index in range(1,20):
     model = joblib.load(
         '/Users/lenovo/flask_projects/flask2024/mediapipe-sample/machine_learning_algorithms/squat_classifier_model.pkl')
 
     # Provide the correct file path
-    file_path = f'/Users/lenovo/flask_projects/flask2024/mediapipe-sample/output/sam-2/squat_{index}_output_landmarks.csv'
-
+    file_path = f'/Users/lenovo/flask_projects/flask2024/mediapipe-sample/output/output_18-13/squat_{index}_output_landmarks.csv'
     # Aggregate the new squat data
     aggregated_data = aggregate_squat_data(file_path)
 
