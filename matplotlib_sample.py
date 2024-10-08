@@ -17,12 +17,16 @@ pose_connections = [
 # Camera view settings for the plot
 default_elevation = -90  # Elevation angle
 default_azimuth = -90    # Azimuth angle
-default_roll = 0     # Roll angle (not directly supported by matplotlib)
+default_roll = 0         # Roll angle (not directly supported by matplotlib)
 
-# Function to load landmark data from a JSON file
+# Function to load and sort landmark data from a JSON file
 def load_landmark_data(json_file):
     with open(json_file, 'r') as f:
         landmark_data = json.load(f)
+
+    # Sort landmark data by the 'frame' key
+    landmark_data = sorted(landmark_data, key=lambda x: x['frame'])
+
     return landmark_data
 
 # Initialize the 3D plot
@@ -81,12 +85,7 @@ def animate(frame_index):
     update_graph(frame_index, landmark_data)
 
 # Load landmark data from JSON file
-json_file_path = 'output/squat_luke/output_14-19-good-0/all_squats_landmarks.json'
-# json_file_path = 'output/output_14-21-good-1-0/all_squats_landmarks.json'
-# json_file_path = 'output/output_14-27-bad-2-0/all_squats_landmarks.json'
-# json_file_path = 'output/output_14-31-bad-3-0/all_squats_landmarks.json'
-# json_file_path = 'output/output_14-37-bad-4-0/all_squats_landmarks.json'
-# json_file_path = 'output/output_14-41-bad-5-0/all_squats_landmarks.json'
+json_file_path = 'output/Squat_Data/Squat_Data/Invalid/output/100.json'
 landmark_data = load_landmark_data(json_file_path)
 
 # Create the animation

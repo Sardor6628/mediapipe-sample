@@ -115,12 +115,11 @@ def aggregate_squat_data(file_path):
 
 # Load the saved model
 for index in range(1,20):
-    model = joblib.load(
-        '/Users/lenovo/flask_projects/flask2024/mediapipe-sample/machine_learning_algorithms/squat_classifier_model.pkl')
+    model = joblib.load("squat_classifier_model.pkl")
 
     # Provide the correct file path
-    file_path = f'/Users/lenovo/flask_projects/flask2024/mediapipe-sample/output/output_18-13/squat_{index}_output_landmarks.csv'
-    # Aggregate the new squat data
+    file_path = f'output_10-21squat_{index}_output_landmarks.csv'
+    # Aggregate the ne/w squat data
     aggregated_data = aggregate_squat_data(file_path)
 
     # Convert the aggregated data into a DataFrame for prediction

@@ -5,8 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd31d83-865d-4f45-b728-3c8733a9094f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/normalized_display_lcs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normilized_mediapipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/Squat_Data/Squat_Data/Valid/output/new_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculate_angles_and_generate_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/machine_learning_algorithms/test_ai_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/test_ai_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matplotlib_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/matplotlib_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_1_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_1_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_1_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_1_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_1_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_1_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_2_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_2_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_2_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_2_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_2_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_2_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_3_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_3_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_3_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_3_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_3_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_3_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_4_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_4_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_4_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_4_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_4_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_4_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_5_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_5_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_5_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_5_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_5_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_5_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_6_landmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_6_landmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_6_output_landmarks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_6_output_landmarks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_6_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_6_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output_10-21/squat_7_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_algorithms/output_10-21/squat_7_video.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +58,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -89,16 +112,17 @@
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\machine_learning_algorithms" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/squat_luke" />
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\output\squat_luke\separated_by_squat" />
       <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample\output\squat_luke" />
-      <recent name="C:\Users\Administrator\PycharmProjects\mediapipe-sample" />
     </key>
   </component>
   <component name="RunManager" selected="Python.calculate_angles_and_generate_csv">
     <configuration name="calculate_angles_and_generate_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProjects" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -121,6 +145,7 @@
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProjects" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -377,15 +402,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="-test AI model" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_mediapipe.coverage" NAME="in_depth_camera_mediapipe Coverage Results" MODIFIED="1725341331892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1727080577652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$visualization_of_normilized_data.coverage" NAME="visualization_of_normilized_data Coverage Results" MODIFIED="1725341227129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$display_angles_realtime.coverage" NAME="display_angles_realtime Coverage Results" MODIFIED="1727664859470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$camera_related_functions.coverage" NAME="camera_related_functions Coverage Results" MODIFIED="1725326528593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$calculate_angles_and_generate_csv.coverage" NAME="calculate_angles_and_generate_csv Coverage Results" MODIFIED="1727080722330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$display_joint_angles.coverage" NAME="display_joint_angles Coverage Results" MODIFIED="1727674625758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_view_and_record.coverage" NAME="in_depth_camera_view_and_record Coverage Results" MODIFIED="1725346348308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProjects$rewrite_video.coverage" NAME="rewrite_video Coverage Results" MODIFIED="1724643264945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$camera_related_functions.coverage" NAME="camera_related_functions Coverage Results" MODIFIED="1725326528593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$display_angles_realtime.coverage" NAME="display_angles_realtime Coverage Results" MODIFIED="1727664859470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_view_and_record.coverage" NAME="in_depth_camera_view_and_record Coverage Results" MODIFIED="1725346348308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$display_joint_angles.coverage" NAME="display_joint_angles Coverage Results" MODIFIED="1727674625758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProjects$main.coverage" NAME="main Coverage Results" MODIFIED="1724726664432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$calculate_angles_and_generate_csv.coverage" NAME="calculate_angles_and_generate_csv Coverage Results" MODIFIED="1727664826248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$visualization_of_normilized_data.coverage" NAME="visualization_of_normilized_data Coverage Results" MODIFIED="1725341227129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$main.coverage" NAME="main Coverage Results" MODIFIED="1727080577652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mediapipe_sample$in_depth_camera_mediapipe.coverage" NAME="in_depth_camera_mediapipe Coverage Results" MODIFIED="1725341331892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
