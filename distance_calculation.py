@@ -9,8 +9,9 @@ model = YOLO("best.pt")
 # Initialize RealSense pipeline
 pipeline = rs.pipeline()
 config = rs.config()
-config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
-config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+# Create a named window before the loop
+cv2.namedWindow("YOLOv8 + RealSense Depth", cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("YOLOv8 + RealSense Depth", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 # Start streaming
 profile = pipeline.start(config)
@@ -34,7 +35,7 @@ try:
         color_image = np.asanyarray(color_frame.get_data())
 
         # Run YOLOv8 object detection
-        results = model(color_image, conf=0.3)
+        results = model(color_image, conf=0.1)
 
         # Draw detections and measure distances
         for result in results:
